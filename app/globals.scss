@@ -1,0 +1,94 @@
+$slate-50: #f8fafc;
+$slate-100: #f1f5f9;
+$slate-200: #e2e8f0;
+$slate-300: #cbd5e1;
+$slate-400: #94a3b8;
+$slate-500: #64748b;
+$slate-600: #475569;
+$slate-700: #334155;
+$slate-800: #1e293b;
+$slate-900: #0f172a;
+$slate-950: #020617;
+
+$purple-50: #faf5ff;
+$purple-100: #f3e8ff;
+$purple-200: #e9d5ff;
+$purple-300: #d8b4fe;
+$purple-400: #c084fc;
+$purple-500: #a855f7;
+$purple-600: #9333ea;
+$purple-700: #7e22ce;
+$purple-800: #6b21a8;
+$purple-900: #581c87;
+$purple-950: #3b0764;
+
+:root {
+  background-color: white;
+  color: $slate-950;
+
+  &.dark {
+    background-color: $slate-950;
+    color: $slate-100;
+  }
+}
+
+.toggle-button {
+  border-radius: 999px;
+  background-color: $purple-500;
+  padding: 0.75rem;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  margin: auto;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $purple-400;
+  }
+
+  .icon {
+    height: 1.75rem;
+    width: 1.75rem;
+    color: white;
+  }
+}
+
+.card {
+  overflow: hidden;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+
+  &.light {
+    background-color: $slate-600;
+    color: $slate-200;
+  }
+
+  &.dark {
+    background-color: $slate-200;
+    color: $slate-950;
+  }
+}
+
+// Basic styling for the page
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.content {
+  margin: auto;
+  max-width: 80rem;
+  text-align: center;
+}
+
+.title {
+  margin: 1.5rem 0;
+  font-weight: 600;
+}
